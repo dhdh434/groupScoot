@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{%load static%}
+{%block content%}
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Welcome to Scoot Scoot!</div>
+        <div class="masthead-heading text-uppercase">We rent out scooters</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'about' %}">About Page</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'customer' %}">Customer Page</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'resources' %}">Resources Page</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{% url 'table' %}">Table Page</a>
+    </div>
+</header>
+{% endblock%}

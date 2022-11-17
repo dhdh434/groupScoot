@@ -4,16 +4,16 @@ from django.http import HttpResponse
 
 
 def indexPageView(request) :
-    return HttpResponse('Scoot Scoot!!!')
+    return render(request, 'webpages/index.html')
 
 def aboutPageView(request) :
-    return HttpResponse('About!!')
+    return render(request, 'webpages/about.html')
     
 def tablePageView(request) :
-    return HttpResponse('Tables Yum!!!')
+    return render(request, 'webpages/table.html')
 
 def resourcesPageView(request) :
-    return HttpResponse('Resources!!!')
+    return render(request, 'webpages/resources.html')
 
 def customerPageView(request) :
-    return HttpResponse('customer!!!')
+    return render(request, 'webpages/customer.html')
